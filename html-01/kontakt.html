@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktní formulář</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Úvodni stranka</a></li>
+                <li><a href="postavy.html">Postavy</a></li>
+                <li><a href="pribeh.html">Přiběh</a></li>
+                <li><a href="kontakt.html">Kontakt - Brie Van de Kamp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form>
+        <div>
+            <h3>
+                Vyplntě tento formulář
+            </h3>
+        </div>
+        <div>
+            <label for="jmeno">
+                Jméno:
+            </label>
+            <input type="text" id="jmeno" name="jmeno" placeholder="Např. Karel Šlehačka">
+        </div>
+        <div>
+            <label for="email">
+                E-mail:
+            </label>
+            <input type="email" id="email" name="email" placeholder="Např. karel.slehacka@email.cz">
+        </div>
+        <div>
+            <label for="heslo">
+                Heslo:
+            </label>
+            <input type="password" id="heslo" name="heslo" placeholder="Např. HesloHeslo123">
+        </div><br>
+        <div>
+            <label for="jidlo">
+                Oblíbené jídlo:
+            </label><br>
+            <label for="mch">Mac & Cheese</label><input type="radio" id="mch" name="jidlo" value="1">
+            <label for="kchn">Kachna na pomerančích</label><input type="radio" id="kchn" name="jidlo" value="2">
+            <label for="spnl">Španělák</label><input type="radio" id="spnl" name="jidlo" value="3">
+        </div><br>
+        <label for="jidlo2">Oblíbené jídlo 2.:</label>
+        <select name="jidlo2" id="jidlo2" required>
+            <option selected disabled>Vyberte své oblíbené jídlo</option>
+            <option value="mch">Mac & Cheese</option>
+            <option value="kchn">Kachna na pomerančích</option>
+            <option value="spnl">Španělák</option>
+        </select>
+        <div><br>
+            <label for="kalendar">Chcete kalendář zdarma?</label>
+            <input type="checkbox" name="kalendar" id="kalendar">
+        </div><br>
+        <div>
+            <label for="vlasy">Vyberte barvu vlasů</label>
+            <input type="color" name="vlasy" id="vlasy">
+        </div><br>
+        <div>
+            <label for="narozky">Datum narození</label>
+            <input type="date" name="narozky" id="narozky">
+        </div><br>
+        <div>
+            <input type="submit" value="Poslat formulářek">
+        </div>
+    </form>
+</body>
+
+</html>
